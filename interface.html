@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="backend.js"></script>
+  <style>
+      body {background-color: black;text-align: center}
+      h1   {color: white;}
+      p    {color: white;}
+      th {
+        border-bottom: 3px solid #ddd;
+      }
+      td {
+        border-bottom: 1px solid #ddd;
+      }
+      </style>
+</head>
+
+<h1>Ethereum Info</h1>
+
+<!-- 5000 ms (5 seconds wait between calls)-->
+<!--calls main(), waits 5000ms, calls main()...-->
+<body onload="main(); setInterval(main, 5000);"> 
+  <p>
+    <div style="color:greenyellow;text-align:center" id="hashRate"></div><br/>
+    <div style="color:greenyellow;text-align:center" id="info"></div><br/>
+  </p>
+</body>
+</html>
