@@ -73,7 +73,7 @@ function main(){
     hashRate /= timeArr.length;
 
     //send info to HTML
-    document.getElementById("hashRate").innerHTML = "The current hash rate is: " + hashRate + " seconds/block";
+    document.getElementById("hashRate").innerHTML = "The current hash rate is: " + Math.round(hashRate * 100) / 100 + " seconds/block";
     document.getElementById("info").innerHTML = header + info + footer;
 
 }
